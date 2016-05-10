@@ -28,13 +28,10 @@ for _,dat in pairs(data.raw) do
 		if item.unit then
 			item.unit.ingredients = {}
 			item.unit.count = 1
-			item.unit.time = 1
+			item.unit.time = 0.5
 		end
 		if item.range then
 			item.range = item.range * 2
-		end
-		if item.max_health then
-			item.max_health = item.max_health * 100
 		end
 		if item.mining_speed then
 			item.mining_speed = item.mining_speed * 5
